@@ -1,0 +1,30 @@
+# alacritty config
+
+live_config_reload = true
+import = ["~/.config/alacritty/falcon.toml"]
+
+[cursor]
+blink_interval = 500
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "always"
+shape = "block"
+
+[env]
+TERM = "alacritty"
+
+[window]
+title = "Alacritty"
+padding = { x = 0, y = 10 }
+dynamic_padding = true
+opacity = 1.0
+
+[font]
+size = 20.0
+
+[font.normal]
+family = "Fira Code"
+
+[selection]
+save_to_clipboard = true
