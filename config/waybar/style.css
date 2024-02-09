@@ -1,0 +1,66 @@
+/**
+* falcon colorscheme:
+*
+* base03    #020221
+* base02    #151521
+* base01    #787882
+* base00    #212127
+* base0     #b4b4b9
+* base1     #f8f8ff
+* base2     #57575e
+* base3     #
+* yellow    #ffc552
+* orange    #ff761a
+* red       #ff3600
+* magenta   #
+* violet    #
+* blue      #
+* cyan      #
+* green     #
+*
+*/
+
+* {
+    border-radius: 0;
+    font-family: Fira Code;
+    font-size: 16px;
+    min-height: 0;
+}
+
+/* transparent */
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#tags {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #020221; /* base03 */
+    border: 2px solid #b4b4b9;
+}
+
+#tags button {
+    margin-top: 10px;
+    margin-left: 10px;
+    colors: #787882; /* base01 */
+    border: 2px solid #b4b4b9; /* base0 */
+}
+
+#tags button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: #ffe8c0;
+}
+
+#tags button.focused {
+    color: #b4b4b9;
+    background-color: #151521;
+    border: 2px solid #b4b4b9;
+}
+#tags button.occupied {
+    border: 2px solid #020221; /*base0*/
+}
+
+#tags button.urgent {
+    border: 2px solid #ff3600; /*red*/
+}
