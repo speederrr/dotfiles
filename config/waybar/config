@@ -1,5 +1,9 @@
 {
-    "modules-left": [
-        "river/tags"
-    ],
+    "modules-left": ["river/tags"],
+    "modules-right": ["clock"],
+    "clock": {
+        "format": "{:%a %d-%m %T}",
+        "interval": 1,
+        "tooltip": false
+    },
 }
