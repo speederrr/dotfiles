@@ -8,15 +8,9 @@
 * base0     #b4b4b9
 * base1     #f8f8ff
 * base2     #57575e
-* base3     #
 * yellow    #ffc552
 * orange    #ff761a
 * red       #ff3600
-* magenta   #
-* violet    #
-* blue      #
-* cyan      #
-* green     #
 *
 */
 
@@ -35,15 +29,16 @@ window#waybar {
 #tags {
     margin-top: 10px;
     margin-left: 10px;
-    background-color: #020221; /* base03 */
+    background-color: #020221;
     border: 2px solid #b4b4b9;
 }
 
 #tags button {
-    margin-top: 10px;
-    margin-left: 10px;
-    colors: #787882; /* base01 */
-    border: 2px solid #b4b4b9; /* base0 */
+    margin: 2px;
+    padding: 1px;
+    color: #b4b4b9;
+    border: 2px solid #020221;
+    transition-property: none;
 }
 
 #tags button:hover {
@@ -55,17 +50,17 @@ window#waybar {
 
 #tags button.focused {
     color: #b4b4b9;
-    background-color: #151521;
+    background-color: #020221;
     border: 2px solid #b4b4b9;
-}
-#tags button.occupied {
-    border: 2px solid #020221; /*base0*/
 }
 
 #tags button.urgent {
-    border: 2px solid #ff3600; /*red*/
+    border: 2px solid #ff3600;
 }
 
+#network,
+#cpu,
+#memory,
 #clock {
     padding: 1px 5px;
     margin-top: 10px;

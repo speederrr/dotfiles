@@ -1,8 +1,31 @@
 {
     "modules-left": ["river/tags"],
-    "modules-right": ["clock"],
+    "modules-right": [
+        "network",
+        "cpu",
+        "memory",
+        "clock",
+    ],
+    "network": {
+        "format-wifi": "{essid} {signalStrength}%",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "cpu{usage:3}%",
+        "interval": 1,
+        "tooltip": false
+    },
+    "memory": {
+        "format": "mem {}%",
+        "interval": 1,
+        "tooltip": false
+    },
     "clock": {
-        "format": "{:%a %d-%m %T}",
+        "format": "{:%a %m-%d %T}",
         "interval": 1,
         "tooltip": false
     },

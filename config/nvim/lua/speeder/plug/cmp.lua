@@ -20,7 +20,7 @@ return {
                 -- completion = cmp.config.window.bordered(),
             },
             completion = {
-                keyword_length = 3,
+                keyword_length = 2,
             },
             mapping = {
                 ["<C-j>"] = cmp.mapping.select_next_item({
